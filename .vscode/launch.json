@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+  {
+    "name": "TeamwayDemo PLEM",
+    "type": "chrome",
+    "request": "launch",
+    "url": "https://teamwaydemo.sharepoint.com/teams/PLEM/_LAYOUTS/15/WORKBENCH.ASPX",
+    "webRoot": "${workspaceRoot}",
+    "sourceMaps": true,
+    "sourceMapPathOverrides": {
+      "webpack:///.././src/*": "${webRoot}/src/*",
+      "webpack:///../../../src/*": "${webRoot}/src/*",
+      "webpack:///../../../../src/*": "${webRoot}/src/*",
+      "webpack:///../../../../../src/*": "${webRoot}/src/*"
+    },
+    "runtimeArgs": [
+      "--remote-debugging-port=9222"
+    ]
+  }
+  ]
+}
